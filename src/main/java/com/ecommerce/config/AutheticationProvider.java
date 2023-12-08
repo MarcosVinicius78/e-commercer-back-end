@@ -35,6 +35,8 @@ public class AutheticationProvider implements AuthenticationProvider {
         
         List<User> user = userRepository.findByUsername(username);
 
+        System.out.println("teste");
+
         if (user.size() > 0) {
             if (passwordEncoder.matches(password, user.get(0).getPassword())) {
                 return new UsernamePasswordAuthenticationToken(username, password,grantedAuthorities(user.get(0).getAuthorities()));
@@ -42,6 +44,16 @@ public class AutheticationProvider implements AuthenticationProvider {
                 throw new BadCredentialsException("Senha está errada");
             }
         }else{
+
+            // User userSave = User.builder()
+            //                 .username(username)
+            //                 .password(passwordEncoder.encode(password))
+            //                 .build();
+
+            // userRepository.save(userSave);
+
+            // System.out.println(userSave);
+
             throw new BadCredentialsException("Nenhum usuario encontrado");
         }
 
