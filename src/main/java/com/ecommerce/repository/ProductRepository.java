@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import com.ecommerce.entity.Product;
 
-public interface ProductRepository extends JpaRepository<Product, Long>{
+public interface ProductRepository extends JpaRepository<Product, Integer>{
 
     Page<Product> findByCategoryId(@Param("id") Long id, Pageable pageable);
 
