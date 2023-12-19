@@ -18,7 +18,7 @@ import com.ecommerce.dto.request.UserCreate;
 import com.ecommerce.dto.response.ClienteResponse;
 import com.ecommerce.entity.Cliente;
 import com.ecommerce.entity.login.Authority;
-import com.ecommerce.entity.login.User;
+import com.ecommerce.entity.login.Usuario;
 import com.ecommerce.repository.AuthorityRepository;
 import com.ecommerce.repository.CustomerRepository;
 import com.ecommerce.repository.UserRepository;
@@ -39,15 +39,15 @@ public class UserController {
     private UserRepository userRepository;
 
     @PostMapping("/api/register")
-    public ResponseEntity<User> registrarUsuario(@RequestBody UserCreate userCreate){
+    public ResponseEntity<Usuario> registrarUsuario(@RequestBody UserCreate userCreate){
 
-        ResponseEntity<User> response = null;
+        ResponseEntity<Usuario> response = null;
         
         if (userRepository.findByUsername(userCreate.username()).size() > 0) {
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         }
         
-        User user = new User();
+        Usuario user = new Usuario();
         Set<Authority> role = new HashSet<>();
         
         String hashPassword = passwordEncoder.encode(userCreate.password());
@@ -73,7 +73,7 @@ public class UserController {
         return response;
     }
 
-    private Authority getAuthority(User user){
+    private Authority getAuthority(Usuario user){
 
         Authority authority = new Authority();
 
@@ -86,7 +86,7 @@ public class UserController {
 
     @GetMapping("/api/user")
     public ResponseEntity<ClienteResponse> getCliente(Authentication authentication){
-         List<User> user = userRepository.findByUsername(authentication.getName());
+         List<Usuario> user = userRepository.findByUsername(authentication.getName());
 
         return ResponseEntity.ok().body(ClienteResponse.toResponse(user.get(0).getCustomer()));
     }

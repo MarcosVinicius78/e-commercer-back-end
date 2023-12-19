@@ -16,7 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import com.ecommerce.entity.login.Authority;
-import com.ecommerce.entity.login.User;
+import com.ecommerce.entity.login.Usuario;
 import com.ecommerce.repository.UserRepository;
 
 @Component
@@ -33,7 +33,7 @@ public class AutheticationProvider implements AuthenticationProvider {
         String username = authentication.getName();
         String password = authentication.getCredentials().toString();
         
-        List<User> user = userRepository.findByUsername(username);
+        List<Usuario> user = userRepository.findByUsername(username);
 
         System.out.println("teste");
 

@@ -28,8 +28,8 @@ C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-
 C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\entity\Country.java
 C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\repository\OrderRepository.java
 C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\constants\SecurityConstants.java
-C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\entity\login\User.java
 C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\entity\Product.java
+C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\entity\login\Usuario.java
 C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\entity\ProductCategory.java
 C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\dto\PurchaseResponse.java
 C:\Users\marco\OneDrive\Documentos\projetos spring\spring-boot-ecommerce\spring-boot-ecommerce\src\main\java\com\ecommerce\repository\OrderItemRepository.java

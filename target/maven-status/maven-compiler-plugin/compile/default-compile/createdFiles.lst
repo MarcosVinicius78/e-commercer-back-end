@@ -1,3 +1,4 @@
+com\ecommerce\entity\login\Usuario$UsuarioBuilder.class
 com\ecommerce\config\SecurityFilter$1.class
 com\ecommerce\controller\order\OrderController.class
 com\ecommerce\entity\Product.class
@@ -17,13 +18,11 @@ com\ecommerce\dto\request\UserCreate.class
 com\ecommerce\entity\Address.class
 com\ecommerce\config\SecurityFilter.class
 com\ecommerce\dto\response\ClienteResponse.class
-com\ecommerce\entity\login\User.class
 com\ecommerce\entity\State.class
 com\ecommerce\repository\OrderRepository.class
 com\ecommerce\service\CheckoutServiceImp.class
 com\ecommerce\controller\order\CheckoutController.class
 com\ecommerce\service\OrderService\OrderSrviceImp.class
-com\ecommerce\entity\login\User$UserBuilder.class
 com\ecommerce\repository\CountryRepository.class
 com\ecommerce\repository\UserRepository.class
 com\ecommerce\entity\login\Authority.class
@@ -36,5 +35,6 @@ com\ecommerce\repository\CustomerRepository.class
 com\ecommerce\repository\StateRepository.class
 com\ecommerce\entity\Order.class
 com\ecommerce\dto\Purchase.class
+com\ecommerce\entity\login\Usuario.class
 com\ecommerce\entity\Country.class
 com\ecommerce\filter\CsrfCookieFilter.class

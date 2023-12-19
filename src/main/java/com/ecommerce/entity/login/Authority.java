@@ -33,6 +33,6 @@ public class Authority {
     @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "user_Id")
-    private User user;
+    private Usuario user;
 
 }

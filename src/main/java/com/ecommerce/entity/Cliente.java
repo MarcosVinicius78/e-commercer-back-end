@@ -3,7 +3,7 @@ package com.ecommerce.entity;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.ecommerce.entity.login.User;
+import com.ecommerce.entity.login.Usuario;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Column;
@@ -47,7 +47,7 @@ public class Cliente {
     @JsonBackReference
     @OneToOne
     @PrimaryKeyJoinColumn
-    private User user;
+    private Usuario user;
     
     public void add(Order order){
         if (order != null) {
